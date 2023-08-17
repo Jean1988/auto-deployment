@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm run lint
     - name: Deploy
-      uses: easingthemes/ssh-deploy@v4.1.8
+      uses: easingthemes/ssh-deploy@v2.0.8
       env:
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
         ARGs: "-rltgoDzv0 --delete"
